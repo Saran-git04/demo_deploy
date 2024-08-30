@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    background-color: lightgrey;
+    padding: 10px;
+    grid-template-areas: 
+    'navigation navigation navigation navigation '
+    'menu  main main main'
+    'menu content content content'
+    'footer footer footer footer'
+    ;
+    
+}
+.container div{
+    background-color: beige;
+    color: white;
+    font-size: large;
+    margin: 5px;
+    text-align: center;
+    align-content: center;
+}
+.item1{
+    grid-area: navigation;
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+   
+}
+.item2{
+    height: 75vh;
+    grid-area: menu;
+}
+.item3{
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+}
+.item4{
+    grid-area: content;
+    display: flex;
+    justify-content: space-between;
+}
+.item5{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+}
+.title h1{
+    font-family: "Metal Mania", system-ui;
+    font-weight: 600;
+    color: black;
+}
+.rightnav{
+    display: flex;
+    
+    
+}
+.rightnav img{
+    border-radius: 50%;
+}
+.info h3,h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding: 2px;
+    
+}
+.rightnav input{
+    width: 250px;
+    height: 33px;
+    margin: 8px;
+    border:0px solid white;
+    box-shadow: 0px 6px 7px 0px lightgray;
+    border-radius: 20px;
+    outline: none;
+}
+.rightnav .info{
+    color: black;
+    text-align:;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;;
+  
+}
+.dropdown{
+    width: 100%;
+    transition: all 500ms;
+
+}
+.dropdown:hover .menus{
+    display: grid;
+
+}
+.dropdown button{
+    background-color: white;
+    border: none;
+    margin: none;
+}
+.dropdown .menus{
+    display: none;
+    row-gap: 20px;
+    background-color: beige;
+    box-shadow: 0px 5px 6px 0px lightgrey, 0px 5px 6px 0px lightgrey;
+    width: 150px;
+    position: absolute;
+}
+.dropdown .menus a{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+   
+    
+}
+.dropdown .menus a:hover{
+    background-color: gray;
+    transition:all 500ms;
+}
+.item2 button{
+     display: grid;
+     height: 75px;
+     width: 270px;
+     margin-left: 40px;
+     margin-right: 0px;
+     margin: 20px;
+     font-family: fantasy;
+     align-items: center;
+     text-align: center;
+     background-color: powderblue;
+     border-radius: 9px;
+     box-shadow: 0px 6px 6px 0px gray,0px 6px 6px 0px gray;
+     margin-right: 60px;
+}
+.item3 h4{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    margin-top: 60px;
+    padding: 30px;
+    text-align: left;
+
+}
+.item4 h4{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    margin-top: 60px;
+    padding: 30px;
+    text-align: right;
+
+}
+.item5  h4,b{
+    text-align: left;
+    margin-left: 30px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.item4 img{
+     margin-top: 80px;
+}
